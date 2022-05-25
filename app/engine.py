@@ -79,6 +79,3 @@ class Engine:
                              (SCREEN_WIDTH - text_health.get_width() - 10, 10))
             self.screen.blit(text_speed,
                              (SCREEN_WIDTH - text_speed.get_width() - 10, 30))
-        else:
-            print("FFFFFFFFFF")
-            # self.running = False

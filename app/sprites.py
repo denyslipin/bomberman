@@ -11,7 +11,7 @@ from config import (
     DEFAULT_PLAYER_HP,
     DEFAULT_PLAYER_SPEED,
     BOMB_TIMER,
-    PLANT_BOMB_COOLDOWN,
+    PLANT_BOMB_COOL_DOWN,
     BOMB_EXPLODE_RANGE,
     FIRE_LIFETIME,
     ANIMAL_MAKE_ACTION,
@@ -105,7 +105,7 @@ class Player(EngineMovingSprite):
         if not self.plant_bomb_cooldown:
             self.is_on_bomb = True
             Bomb(self.rect.center)
-            self.plant_bomb_cooldown = PLANT_BOMB_COOLDOWN
+            self.plant_bomb_cooldown = PLANT_BOMB_COOL_DOWN
 
     def change_health(self, hp: int):
         self.health += hp
